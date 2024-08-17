@@ -136,7 +136,9 @@ footer {
 
 .sobre-mi-contenido {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: right;
 }
 
 .sobre-mi-contenido img {
@@ -146,5 +148,25 @@ footer {
 }
 
 .proyectos {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.proyecto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-proyecto {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.descripcion-proyecto {
+    max-width: 45%;
+    text-align: justify;
+}
+

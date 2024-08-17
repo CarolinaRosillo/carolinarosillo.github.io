@@ -137,14 +137,19 @@ footer {
 .sobre-mi-contenido {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    text-align: right;
+    justify-content: flex-start; /* Cambiado a flex-start */
+    text-align: left; /* Cambiado a left */
+}
+
+.sobre-mi-contenido p {
+    max-width: 70%; /* Asegura que el texto no ocupe todo el ancho disponible */
 }
 
 .sobre-mi-contenido img {
     margin-left: 20px;
     border-radius: 10px;
-    max-width: 200px;
+    max-width: 150px; /* Tamaño reducido de las imágenes */
+    height: auto; /* Mantiene la proporción */
 }
 
 .proyectos {
@@ -155,18 +160,19 @@ footer {
 
 .proyecto {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row; /* Cambiado a row */
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre imagen y texto */
     margin-bottom: 20px;
 }
 
 .foto-proyecto {
-    max-width: 50%;
+    max-width: 150px; /* Tamaño reducido de las imágenes */
+    height: auto; /* Mantiene la proporción */
     border-radius: 10px;
 }
 
 .descripcion-proyecto {
-    max-width: 45%;
-    text-align: justify;
+    max-width: 100%; /* Permite que el texto ocupe el ancho completo disponible */
+    text-align: justify; /* Alinea el texto justificadamente */
 }
-

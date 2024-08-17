@@ -5,7 +5,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Estilos del encabezado */
 header {
     display: flex;
     justify-content: space-between;
@@ -18,18 +17,41 @@ header {
 }
 
 .logo img {
-    height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 40px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: white;
+    height: 3px;
+    margin: 4px;
+    width: 25px;
+}
+
+.menu {
+    display: none;
 }
 
 .menu ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 150px;
 }
 
 .menu ul li {
-    margin-left: 20px;
+    margin: 10px 0;
 }
 
 .menu ul li a {
@@ -37,7 +59,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 5px;
+    display: block;
     transition: background-color 0.3s ease;
 }
 
@@ -63,88 +85,66 @@ footer {
     width: 100%;
 }
 
-a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Añadir aquí los nuevos estilos para los botones */
 .botones {
-    margin-top: 20px; /* Espacio superior opcional */
-    text-align: center; /* Centra los botones */
+    margin-top: 20px;
+    text-align: center;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px; /* Espaciado interno */
-    margin: 10px; /* Espacio entre botones */
-    font-size: 1em; /* Tamaño de la fuente */
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
     font-weight: bold;
-    text-decoration: none; /* Quitar subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contacto {
-    background-color: #4A90E2; /* Color de fondo para Contáctame */
-    color: white; /* Color de texto */
-    border: 2px solid #4A90E2; /* Borde */
+    background-color: #4A90E2;
+    color: white;
+    border: 2px solid #4A90E2;
 }
 
 .contacto:hover {
-    background-color: white; /* Cambia a blanco al pasar el mouse */
-    color: #4A90E2; /* Cambia el color del texto */
+    background-color: white;
+    color: #4A90E2;
 }
 
 .linkedin {
-    background-color: #0077B5; /* Color de fondo para LinkedIn */
-    color: white; /* Color de texto */
-    border: 2px solid #0077B5; /* Borde */
+    background-color: #0077B5;
+    color: white;
+    border: 2px solid #0077B5;
 }
 
 .linkedin:hover {
-    background-color: white; /* Cambia a blanco al pasar el mouse */
-    color: #0077B5; /* Cambia el color del texto */
+    background-color: white;
+    color: #0077B5;
 }
 
 .cv {
-    background-color: #FF6F61; /* Color de fondo para CV */
-    color: white; /* Color de texto */
-    border: 2px solid #FF6F61; /* Borde */
+    background-color: #FF6F61;
+    color: white;
+    border: 2px solid #FF6F61;
 }
 
 .cv:hover {
-    background-color: white; /* Cambia a blanco al pasar el mouse */
-    color: #FF6F61; /* Cambia el color del texto */
+    background-color: white;
+    color: #FF6F61;
 }
 
-/* Estilos para los títulos de secciones */
-h2 {
-    font-size: 1.8em; /* Tamaño de fuente para títulos de sección */
-    color: #333; /* Color del texto */
-    margin-top: 40px; /* Espaciado superior para separar las secciones */
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
 }
 
-/* Estilos para los párrafos de descripción */
-p.descripcion {
-    font-size: 1.1em; /* Tamaño de fuente para descripciones */
-    line-height: 1.6em; /* Altura de línea para mejorar la legibilidad */
-    color: #555; /* Color del texto */
-    margin-bottom: 20px; /* Espaciado inferior */
+.sobre-mi-contenido img {
+    margin-left: 20px;
+    border-radius: 10px;
+    max-width: 200px;
 }
 
-/* Estilo para los enlaces de GitHub en los proyectos */
-.proyecto-link {
-    display: block; /* Hace que el enlace ocupe toda la línea */
-    margin-top: 10px; /* Espaciado superior */
-    color: #1e90ff; /* Color del enlace */
-    text-decoration: none; /* Quitar subrayado */
-}
-
-.proyecto-link:hover {
-    text-decoration: underline; /* Añade subrayado al pasar el mouse */
+.proyectos {
+    text-align: left;
 }
